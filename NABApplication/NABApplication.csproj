@@ -118,13 +118,16 @@
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\NewHomeLoanSteps.cs" />
+    <Compile Include="StepDefinitions\TestCaseNamingStep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="FetaureFiles\NewHomeLoan.feature" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TestInput\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AutomationFramework\AutomationFramework.csproj">
       <Project>{5345C9F3-B205-4A4B-88BF-21C8110DB339}</Project>

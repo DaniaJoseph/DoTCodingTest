@@ -74,10 +74,10 @@ namespace NABApplication.FetaureFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Request for return call back service")]
+        [NUnit.Framework.DescriptionAttribute("Book An AppoiGSntment")]
         [NUnit.Framework.CategoryAttribute("UI_Automation")]
-        [NUnit.Framework.TestCaseAttribute("Yes", "56328061", "Vidhya", "Venugan", "VIC", "0444592800", "vidhyav9@gmail.com", null)]
-        public virtual void RequestForReturnCallBackService(string existingCustomer, string nabId, string firstName, string lastName, string state, string phoneNumber, string emailId, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("TC#01", null)]
+        public virtual void BookAnAppoiGSntment(string testCaseNo, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "UI_Automation"};
@@ -87,15 +87,9 @@ namespace NABApplication.FetaureFiles
             }
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("ExistingCustomer", existingCustomer);
-            argumentsOfScenario.Add("NabId", nabId);
-            argumentsOfScenario.Add("FirstName", firstName);
-            argumentsOfScenario.Add("LastName", lastName);
-            argumentsOfScenario.Add("State", state);
-            argumentsOfScenario.Add("PhoneNumber", phoneNumber);
-            argumentsOfScenario.Add("EmailId", emailId);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request for return call back service", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 3
+            argumentsOfScenario.Add("TestCaseNo", testCaseNo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Book An AppoiGSntment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -115,32 +109,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 4
- testRunner.Given("the user navigates to nab homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+testRunner.Given(string.Format("I am Running test  {0}", testCaseNo), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 5
+#line 22
+testRunner.And("I collect the required data to fill the contact details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.And("the user navigates to nab homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 24
  testRunner.Then("verify the title of the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 6
+#line 25
  testRunner.Given("the user navigates to home loans", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 7
- testRunner.When("the user clicks on request to call back service", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 8
- testRunner.And("selects the new home loans service", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 9
- testRunner.And("select the loan topic as <Buying a new property>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 10
- testRunner.And(string.Format("the user fills the form with {0},{1},{2},{3},{4},{5} and {6}", existingCustomer, nabId, firstName, lastName, state, phoneNumber, emailId), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 11
- testRunner.And("submits the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 12
- testRunner.Then("the application is submitted successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 26
+ testRunner.When("the user clicks on Book an appointment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
             this.ScenarioCleanup();

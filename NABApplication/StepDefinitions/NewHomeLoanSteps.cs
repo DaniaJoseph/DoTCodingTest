@@ -37,6 +37,11 @@ namespace NABApplication.StepDefinitions
             AllPageObjects.homeLoansPage.ClickOnBookAnAppointment();
         }
 
+        //[When(@"selects Buying a property")]
+        //public void WhenSelectsBuyingAProperty()
+        //{
+        //    AllPageObjects.BookAnAppoinmentPage.ClickBuyingAproperty(
+        //}
 
 
 

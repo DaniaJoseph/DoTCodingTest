@@ -14,6 +14,8 @@ namespace NABApplication.Pages
         private ElementUtil _elementUtil;
         private JavascriptUtil _javascriptUtil;
 
+
+     
         #region Constructor
         public BookAnAppoinmentPage(IWebDriver driver)
         {
@@ -22,5 +24,7 @@ namespace NABApplication.Pages
             _javascriptUtil = new JavascriptUtil(this._driver);
         }
         #endregion
+
+       
     }
 }
