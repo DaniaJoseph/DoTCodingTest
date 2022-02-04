@@ -37,8 +37,8 @@ Clone the code into your local from the GitHub repository :
 *Option 1*: Build the project and from the test explorer window run the tests.
 
 ## Azure Devops Execution
--Access the Azure project ->https://dev.azure.com/josephd0148/DoTCodingTest
--.Run the Automation build pipeline
--Create the release for Coding test to run the test.
--Access the Tests tab in the release logs to view the test results
+* Access the Azure project ->https://dev.azure.com/josephd0148/DoTCodingTest
+* Run the Automation build pipeline
+* Create the release for Coding test to run the test.
+* Access the Tests tab in the release logs to view the test results
 # DoTCodingTest
