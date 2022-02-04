@@ -111,11 +111,18 @@
   <ItemGroup>
     <Compile Include="Hooks\HooksInitialize.cs" />
     <Compile Include="Pages\AllPageObjects.cs" />
+    <Compile Include="Pages\ApplicantFormPage.cs" />
+    <Compile Include="Pages\AppointmentDetailsPage.cs" />
     <Compile Include="Pages\BookAnAppoinmentPage.cs" />
     <Compile Include="Pages\CallBackFormPage.cs" />
+    <Compile Include="Pages\ContactFormPage.cs" />
     <Compile Include="Pages\CustomerAssistancePage.cs" />
+    <Compile Include="Pages\DepositFormPage.cs" />
     <Compile Include="Pages\HomeLoansPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\IncomeFormPage.cs" />
+    <Compile Include="Pages\LocationFormPage.cs" />
+    <Compile Include="Pages\TimeSlotPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\NewHomeLoanSteps.cs" />
     <Compile Include="StepDefinitions\TestCaseNamingStep.cs" />
