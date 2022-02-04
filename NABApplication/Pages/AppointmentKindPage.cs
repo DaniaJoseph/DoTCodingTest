@@ -23,7 +23,7 @@ namespace NABApplication.Pages
         }
         #endregion
         private By _shadowRoot = By.XPath("//*[@id='wrapper']//self-serve-appointment-booking");
-        private By _phoneCallOption = By.CssSelector("div > div > div > div > div.sc-gtsrHT.Rowstyle__StyledRow-mjf486-0.iHXuUE.cwoAMR.StyledRow-bfNfbx.jlSDJf > div.sc-dlnjwi.Colstyle__StyledCol-sc-1evc4kf-0.ldCTSc.duEYaW.LeftContentCol-fOupiG.AppointmentSelectCol-jlmUBP.fKiecM.dbHahP > a:nth-child(4) > div > div > div > p.ListItemstyle__StyledLabel-sc-1lp3zzc-0.hPcUMr.label");
+        private By _phoneCallOption = By.CssSelector("div > div > div > div > div.sc-gtsrHT.Rowstyle__StyledRow-mjf486-0.iHXuUE.cwoAMR.StyledRow-bfNfbx.jlSDJf > div.sc-dlnjwi.Colstyle__StyledCol-sc-1evc4kf-0.ldCTSc.duEYaW.LeftContentCol-fOupiG.AppointmentSelectCol-jlmUBP.fKiecM.dbHahP > a:nth-child(3) > div > div > div > p.ListItemstyle__StyledLabel-sc-1lp3zzc-0.hPcUMr.label");
         public void SelectPhoneCallOption()
         {
             Thread.Sleep(1000);
