@@ -2,7 +2,7 @@
 
 
 	@UI_Automation
-Scenario Outline: Book An AppoiGSntment
+Scenario Outline: Book An Appointment
 Given I am Running test  <TestCaseNo>
 And I collect the required data to fill the contact details page
 	And the user navigates to nab homepage

@@ -74,10 +74,10 @@ namespace NABApplication.FetaureFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Book An AppoiGSntment")]
+        [NUnit.Framework.DescriptionAttribute("Book An Appointment")]
         [NUnit.Framework.CategoryAttribute("UI_Automation")]
         [NUnit.Framework.TestCaseAttribute("TC#01", null)]
-        public virtual void BookAnAppoiGSntment(string testCaseNo, string[] exampleTags)
+        public virtual void BookAnAppointment(string testCaseNo, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "UI_Automation"};
@@ -88,7 +88,7 @@ namespace NABApplication.FetaureFiles
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("TestCaseNo", testCaseNo);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Book An AppoiGSntment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Book An Appointment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
