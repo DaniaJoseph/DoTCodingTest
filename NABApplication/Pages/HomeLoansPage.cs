@@ -106,7 +106,7 @@ namespace NABApplication.Pages
 			shadowRoot.FindElement(_videoCallOption).Click();
 			Thread.Sleep(1000);
 			shadowRoot.FindElement(_7thDateOption).Click();
-			Thread.Sleep(1000);
+			Thread.Sleep(3000);
 			shadowRoot.FindElement(_845TimeOption).Click();
 			Thread.Sleep(1000);
 			shadowRoot.FindElement(_timeSlotFormNextButton).Click();
@@ -125,7 +125,7 @@ namespace NABApplication.Pages
 			Console.WriteLine(ExcelReaderHelpers.ReadData(1, "Mobile"));
 			Thread.Sleep(1000);
 			shadowRoot.FindElement(_contactFormNextButton).Click();
-			Thread.Sleep(1000);
+			Thread.Sleep(3000);
 			Assert.IsTrue(shadowRoot.FindElement(_appointmentDetailsText).Displayed);
 		}
 
