@@ -32,9 +32,9 @@ The framework has following features:
 ![FrameworkStructure](/FrameworkStructure.png?raw=true)
 
 ## Execution
-Clone the code into your local from the bitbucket repository :
+Clone the code into your local from the GitHub repository :
 
-**git clone https://vidhyavenugan1-admin@bitbucket.org/vidhyavenugan1/dotcodingtest.git**
+**git clone https://github.com/DaniaJoseph/DoTCodingTest.git**
 
 *Option 1*: Build the project and from the test explorer window run the tests.
 # DoTCodingTest
