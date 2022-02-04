@@ -4,13 +4,13 @@
 ### What is this repository for? ###
 
 * This repository contains the coding test for DoT which includes the UI automation using Selenium C# with Data Driven from Specflow framework.
-* One solution contains multiple projects for UI and API automation.
+* One solution contains multiple projects for UI automation.
 
 ## Pre-requisite: 
 Miscrosoft Visual Studio 2019 should be installed in the system.
 
 ## Selenium Framework with Specflow
-BDD framework for UI and API automation using Selenium C# and Nunit.
+BDD framework for UI automation using Selenium C# and Nunit.
 
 The framework has following features:
 
@@ -23,7 +23,7 @@ The framework has following features:
 
 ## Framework and Project folders
 - Factory – Initializes the driver.
-- Utils – for web elements, Api and few javascript utils.
+- Utils – for web elements and few javascript utils.
 - Pages – C# classes for different pages to locate the elements and perform actions.
 - Features – for adding feature files.
 - StepDefinitions – add steps corresponding to the feature file. and hooks class which contains the annotations.
