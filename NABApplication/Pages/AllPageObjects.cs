@@ -13,6 +13,15 @@ namespace NABApplication.Pages
         public static HomeLoansPage homeLoansPage;
         public static CustomerAssistancePage customerAssistancePage;
         public static CallBackFormPage callBackFormPage;
+        public static BookAnAppoinmentPage BookAnAppoinmentPage;
+        public static ApplicantFormPage ApplicantFormPage;
+        public static IncomeFormPage IncomeFormPage;
+        public static DepositFormPage DepositFormPage;
+        public static LocationFormPage LocationFormPage;
+        public static AppointmentKindPage AppointmentKindPage;
+        public static TimeSlotPage TimeSlotPage;
+        public static ContactFormPage ContactFormPage;
+        public static AppointmentDetailsPage AppointmentDetailsPage;
 
         public static void InitializeAllPages()
         {
@@ -20,6 +29,17 @@ namespace NABApplication.Pages
             homeLoansPage = new HomeLoansPage(DriverFactory.Driver);
             customerAssistancePage = new CustomerAssistancePage(DriverFactory.Driver);
             callBackFormPage = new CallBackFormPage(DriverFactory.Driver);
+            BookAnAppoinmentPage=new BookAnAppoinmentPage(DriverFactory.Driver);
+            ApplicantFormPage=new ApplicantFormPage(DriverFactory.Driver);
+            IncomeFormPage=new IncomeFormPage(DriverFactory.Driver);
+            DepositFormPage=new DepositFormPage(DriverFactory.Driver);
+            LocationFormPage=new LocationFormPage(DriverFactory.Driver);
+            AppointmentKindPage=new AppointmentKindPage(DriverFactory.Driver);
+            TimeSlotPage= new TimeSlotPage(DriverFactory.Driver);
+            ContactFormPage=new ContactFormPage(DriverFactory.Driver);
+            AppointmentDetailsPage=new AppointmentDetailsPage(DriverFactory.Driver);
         }
+
+
     }
 }

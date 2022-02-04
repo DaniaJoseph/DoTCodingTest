@@ -9,33 +9,28 @@ using System.Threading.Tasks;
 
 namespace NABApplication.Pages
 {
-    public class BookAnAppoinmentPage
+   public  class AppointmentKindPage
     {
         private IWebDriver _driver;
         private ElementUtil _elementUtil;
         private JavascriptUtil _javascriptUtil;
-
-
         #region Constructor
-        public BookAnAppoinmentPage(IWebDriver driver)
+        public AppointmentKindPage(IWebDriver driver)
         {
             this._driver = driver;
             _elementUtil = new ElementUtil(this._driver);
             _javascriptUtil = new JavascriptUtil(this._driver);
         }
         #endregion
-
         private By _shadowRoot = By.XPath("//*[@id='wrapper']//self-serve-appointment-booking");
-        private By _buyingAproperty = By.CssSelector("div[aria-label='Buying a property']>div>div>p:nth-child(1)");
-
-        public void SelectBuyingApropertyOption()
+        private By _phoneCallOption = By.CssSelector("div > div > div > div > div.sc-gtsrHT.Rowstyle__StyledRow-mjf486-0.iHXuUE.cwoAMR.StyledRow-bfNfbx.jlSDJf > div.sc-dlnjwi.Colstyle__StyledCol-sc-1evc4kf-0.ldCTSc.duEYaW.LeftContentCol-fOupiG.AppointmentSelectCol-jlmUBP.fKiecM.dbHahP > a:nth-child(4) > div > div > div > p.ListItemstyle__StyledLabel-sc-1lp3zzc-0.hPcUMr.label");
+        public void SelectPhoneCallOption()
         {
             Thread.Sleep(1000);
             IWebElement shadowRoot = _javascriptUtil.ExpandRootElement(_elementUtil.GetElement(_shadowRoot));
             Thread.Sleep(1000);
-            shadowRoot.FindElement(_buyingAproperty).Click();
+            shadowRoot.FindElement(_phoneCallOption).Click();
+            Thread.Sleep(1000);
         }
-
     }
 }
-

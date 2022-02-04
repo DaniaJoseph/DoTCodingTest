@@ -9,7 +9,7 @@ using TechTalk.SpecFlow;
 namespace NABApplication.StepDefinitions
 {
     [Binding]
-    public class NewHomeLoanSteps
+    public class BookAnAppopintmentSteps
     {
         [Given(@"the user navigates to nab homepage")]
         public void GivenTheUserNavigatesToNabHomepage()
@@ -37,13 +37,63 @@ namespace NABApplication.StepDefinitions
             AllPageObjects.homeLoansPage.ClickOnBookAnAppointment();
         }
 
-        //[When(@"selects Buying a property")]
-        //public void WhenSelectsBuyingAProperty()
-        //{
-        //    AllPageObjects.BookAnAppoinmentPage.ClickBuyingAproperty(
-        //}
+        [When(@"selects the option for Buying a property")]
+        public void WhenSelectsTheOptionForBuyingAProperty()
+        {
+            AllPageObjects.BookAnAppoinmentPage.SelectBuyingApropertyOption();
+        }
+        
+
+        [When(@"one applicant option is selected for How many applicants are there")]
+        public void WhenApplicantOptionIsSelectedForHowManyApplicantsAreThere()
+        {
+            AllPageObjects.ApplicantFormPage.ClickFirstApplicant();
+        }
 
 
+        [When(@"selects the option Full or part time employment in the Income page")]
+        public void WhenSelectsTheOptionFullOrPartTimeEmploymentInTheIncomePage()
+        {
+            AllPageObjects.IncomeFormPage.SelectFullorParttimeEmployment();
+        }
+
+   
+        [When(@"Money saved option is selected for Deposit amount")]
+        public void WhenMoneySavedOptionIsSelectedForDepositAmount()
+        {
+            AllPageObjects.DepositFormPage.SelectMoneySavedOption();
+        }
+
+        [When(@"the user enters the suburb")]
+        public void WhenTheUserEntersTheSuburb()
+        {
+            AllPageObjects.LocationFormPage.EnterSuburborPostcode();
+        }
+     
+        [When(@"user selects the Phone call option")]
+        public void WhenUserSelectsThePhoneCallOption()
+        {
+            AllPageObjects.AppointmentKindPage.SelectPhoneCallOption();
+        }
+
+        [When(@"the user selects the appointment date and time")]
+        public void WhenTheUserSelectsTheAppointmentDateAndTime()
+        {
+            AllPageObjects.TimeSlotPage.SelectAppointDateAndTime();
+        }
+        [When(@"the user enter the contact details from an excel sheet")]
+        public void WhenTheUserEnterTheContactDetailsFromAnExcelSheet()
+        {
+            AllPageObjects.ContactFormPage.EnterContactDetails();
+        }
+        [Then(@"verify the appointment details")]
+        public void ThenVerifyTheAppointmentDetails()
+        {
+            AllPageObjects.AppointmentDetailsPage.VerifyIfAppointmentDetailsIsDisplayed();
+        }
+
+
+        #region oldcode
 
         [When(@"the user clicks on request to call back service")]
         public void WhenTheUserClicksOnRequestToCallBackService()
@@ -87,5 +137,6 @@ namespace NABApplication.StepDefinitions
         {
             
         }
+        #endregion
     }
 }
