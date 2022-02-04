@@ -3,7 +3,7 @@
 
 ### What is this repository for? ###
 
-* This repository contains the coding test for DoT which includes UI and API automation using Selenium C# with Data Driven from Specflow framework.
+* This repository contains the coding test for DoT which includes the UI automation using Selenium C# with Data Driven from Specflow framework.
 * One solution contains multiple projects for UI and API automation.
 
 ## Pre-requisite: 
