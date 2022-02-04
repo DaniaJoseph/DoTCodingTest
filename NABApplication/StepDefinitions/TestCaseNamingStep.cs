@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
@@ -33,8 +34,15 @@ namespace NABApplication.StepDefinitions
         [Given(@"I collect the required data to fill the contact details page")]
         public void GivenICollectTheRequiredDataToFillTheContactDetailsPage()
         {
-            var projectFolderPath = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
-            var fileName = Path.GetFullPath(Path.Combine(projectFolderPath, "Dania\\master\\NABApplication\\TestInput\\TestInput.xlsx"));
+            //var projectFolderPath = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));
+            //var fileName = Path.GetFullPath(Path.Combine(projectFolderPath, "Dania\\master\\NABApplication\\TestInput\\TestInput.xlsx"));
+
+            var projectFolderPath = Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+            projectFolderPath = projectFolderPath.Remove(projectFolderPath.Length - 3);
+            //var projectFolderPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
+            var localPath = "TestInput\\TestInput.xlsx";
+            var fileName = Path.GetFullPath(Path.Combine(projectFolderPath, localPath));
+
             sheetname = "ContactDeatils";
             ExcelReaderHelpers.PopulateInCollection(fileName, sheetname);
         }
