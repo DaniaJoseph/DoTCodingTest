@@ -29,8 +29,6 @@ The framework has following features:
 - StepDefinitions – add steps corresponding to the feature file. and hooks class which contains the annotations.
 - Hooks - Binding class which contains the annotations fro Before Scenario and After Scenario.
 
-![FrameworkStructure](/FrameworkStructure.png?raw=true)
-
 ## Execution
 Clone the code into your local from the GitHub repository :
 
