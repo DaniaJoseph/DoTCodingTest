@@ -25,7 +25,7 @@ namespace NABApplication.Pages
 
 		private By _shadowRoot = By.XPath("//*[@id='wrapper']//self-serve-appointment-booking");
 		private By _buyingAproperty = By.CssSelector("div[aria-label='Buying a property']>div>div>p:nth-child(1)");
-		private By _1applicant = By.CssSelector("#applicatnts-form > fieldset > div > div > div > label:nth-child(1) > span.Radiostyle__CustomRadio-ejyijk-0.SSABCustomRadio-hxnFFh.ciJiFM.fHHUyj");
+		private By _1applicant = By.CssSelector("label[for='applicants-0']>span[class*='Radio']");
 		private By _applicantFormNextButton = By.CssSelector("#applicatnts-form > p > button");
 		private By _fullorPartTimeEmployment = By.CssSelector("#income-form > fieldset > div > div > div > label:nth-child(1) > span.Checkboxstyle__CustomCheckbox-tk9n2c-0.SSABCustomCheckbox-lolqDD.fABBwW.fMJtph");
 		private By _incomeFormNextButton = By.CssSelector("#income-form > p.Styledp-iPxeNv.dVTyqH > button");
@@ -110,7 +110,7 @@ namespace NABApplication.Pages
 			shadowRoot.FindElement(_845TimeOption).Click();
 			Thread.Sleep(1000);
 			shadowRoot.FindElement(_timeSlotFormNextButton).Click();
-			Thread.Sleep(1000);
+			Thread.Sleep(3000);
 
 
 			shadowRoot.FindElement(_firstNameTextBox).SendKeys(ExcelReaderHelpers.ReadData(1, "FirstName"));
