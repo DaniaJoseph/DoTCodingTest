@@ -32,7 +32,7 @@ namespace NABApplication.Pages
         {
             Thread.Sleep(1000);
             IWebElement shadowRoot = _javascriptUtil.ExpandRootElement(_elementUtil.GetElement(_shadowRoot));
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             shadowRoot.FindElement(_buyingAproperty).Click();
         }
 

@@ -30,7 +30,7 @@ namespace NABApplication.Pages
         {
             Thread.Sleep(3000);
             IWebElement shadowRoot = _javascriptUtil.ExpandRootElement(_elementUtil.GetElement(_shadowRoot));
-            Thread.Sleep(4000);
+            Thread.Sleep(8000);       
             shadowRoot.FindElement(_7thDateOption).Click();
             Thread.Sleep(3000);
             shadowRoot.FindElement(_firstTimeOption).Click();

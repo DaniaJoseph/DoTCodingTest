@@ -146,6 +146,13 @@ namespace AutomationFramework.Utilities
 			CloseWindow();
 			return title;
 		}
-        #endregion
-    }
+		#endregion
+
+		#region ElementIsVisible
+		public void WaitForElementIsVisible(By locator)
+		{
+			new WebDriverWait(_driver, TimeSpan.FromSeconds(30)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(locator));
+		}
+		#endregion
+	}
 }
