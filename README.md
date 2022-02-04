@@ -3,14 +3,14 @@
 
 ### What is this repository for? ###
 
-* This repository contains the coding test for DoT which includes UI and API automation using Selenium C# with Data Driven from Specflow framework.
-* One solution contains multiple projects for UI and API automation.
+* This repository contains the coding test for DoT which includes the UI automation using Selenium C# with Data Driven from Specflow framework.
+* One solution contains multiple projects for UI automation.
 
 ## Pre-requisite: 
 Miscrosoft Visual Studio 2019 should be installed in the system.
 
 ## Selenium Framework with Specflow
-BDD framework for UI and API automation using Selenium C# and Nunit.
+BDD framework for UI automation using Selenium C# and Nunit.
 
 The framework has following features:
 
@@ -23,18 +23,22 @@ The framework has following features:
 
 ## Framework and Project folders
 - Factory – Initializes the driver.
-- Utils – for web elements, Api and few javascript utils.
+- Utils – for web elements and few javascript utils.
 - Pages – C# classes for different pages to locate the elements and perform actions.
 - Features – for adding feature files.
 - StepDefinitions – add steps corresponding to the feature file. and hooks class which contains the annotations.
 - Hooks - Binding class which contains the annotations fro Before Scenario and After Scenario.
 
-![FrameworkStructure](/FrameworkStructure.png?raw=true)
-
 ## Execution
-Clone the code into your local from the bitbucket repository :
+Clone the code into your local from the GitHub repository :
 
-**git clone https://vidhyavenugan1-admin@bitbucket.org/vidhyavenugan1/dotcodingtest.git**
+**git clone https://github.com/DaniaJoseph/DoTCodingTest.git**
 
 *Option 1*: Build the project and from the test explorer window run the tests.
+
+## Azure Devops Execution
+* Access the Azure project ->https://dev.azure.com/josephd0148/DoTCodingTest
+* Run the Automation build pipeline
+* Create the release for Coding test to run the test.
+* Access the Tests tab in the release logs to view the test results
 # DoTCodingTest
