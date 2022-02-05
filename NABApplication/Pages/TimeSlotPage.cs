@@ -1,5 +1,6 @@
 ﻿using AutomationFramework.Utilities;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,10 +32,15 @@ namespace NABApplication.Pages
         public void SelectAppointDateAndTime()
         {
             Thread.Sleep(3000);
+            new WebDriverWait(_driver, TimeSpan.FromSeconds(120)).Until(d => ((IJavaScriptExecutor)d).ExecuteScript("return document.readyState").Equals("complete"));
             IWebElement shadowRoot = _javascriptUtil.ExpandRootElement(_elementUtil.GetElement(_shadowRoot));
             Thread.Sleep(8000);
+            new WebDriverWait(_driver, TimeSpan.FromSeconds(80000)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(shadowRoot.FindElement(_7thDateOption)));
           
-            shadowRoot.FindElement(_7thDateOption).Click();
+            new WebDriverWait(_driver, TimeSpan.FromSeconds(120)).Until(d => ((IJavaScriptExecutor)d).ExecuteScript("return document.readyState").Equals("complete"));
+            IJavaScriptExecutor ex = (IJavaScriptExecutor)_driver;
+            ex.ExecuteScript("arguments[0].click();", shadowRoot.FindElement(_7thDateOption));
+
             Thread.Sleep(3000);
             shadowRoot.FindElement(_firstTimeOption).Click();
             Thread.Sleep(1000);
